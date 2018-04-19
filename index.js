@@ -6,5 +6,11 @@ function produceDrivingRange(maxRange) {
     } else {
       return `${diff-maxRange} blocks out of range`;
     }
-  }
+  };
+}
+
+function produceTipCalculator(percentage) {
+  return (fare) => {
+    return fare * percentage;
+  };
 }
